@@ -117,7 +117,13 @@ php think make:request TestRequest
 #会在 app/FormRequest目录下生成一个TestRequest表单验证器类库
 ```
 ---
-
+### 修改表单验证器中的validate属性
+```php 
+    /**
+     * @var Validate|string 验证器
+     */
+    protected $validate = \app\validate\Test::class;
+```
 ### 在控制器中使用
 
 ---
