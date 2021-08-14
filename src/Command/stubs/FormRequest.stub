@@ -1,0 +1,69 @@
+<?php
+
+namespace {%namespace%};
+
+use SaTan\Think\Request\FormRequest;
+use think\Validate;
+
+class {%className%} extends FormRequest
+{
+    /*
+     * 初始化
+     */
+    protected function initialization ():void
+    {
+    }
+    }
+
+    /**
+     * @var Validate|string 验证器
+     */
+    protected $validate;
+
+    /**
+     *
+     * @var bool $batch 批量验证
+     */
+    protected $batch = false;
+
+    /**
+     * 验证权限
+     * @return bool
+     */
+    protected  function check ():bool
+    {
+        return true;
+    }
+
+    /**
+     * 验证规则
+     * @return array
+     */
+    protected function rules():array
+    {
+        return [
+
+        ];
+    }
+
+    /**
+     * 错误消息
+     * @return array
+     */
+    protected function messages():array
+    {
+        return [
+
+        ];
+    }
+
+    /**
+     * 验证前置操作
+     * @param Validate $validate
+     */
+    protected function withValidate(Validate $validate):void
+    {
+
+    }
+
+}

@@ -1,0 +1,31 @@
+{
+    "name": "death_satan/thinkphp-form-request",
+    "description": "thinkphp6 form request",
+    "type": "library",
+    "homepage": "https://www.cnblogs.com/death-satan",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "death-satan",
+            "email": "2771717608@qq.com"
+        }
+    ],
+    "require": {
+        "topthink/framework": "^6.0.0",
+        "symfony/var-exporter": "^5.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "SaTan\\Think\\Request\\": "src"
+        }
+    },
+    "minimum-stability": "stable",
+    "keywords": ["thinkphp6","thinkphp composer组件扩展包"],
+    "extra": {
+        "think": {
+            "services": [
+                "\\SaTan\\Think\\Request\\Service"
+            ]
+        }
+    }
+}
